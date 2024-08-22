@@ -42,7 +42,7 @@ public class Main {
 
             switch (opcion){
                 case 1:
-                    MostarLibros();
+                    System.out.println("Los Libros Son:");
                     break;
                 case 2:
                     System.out.println("Los Capitulos Son:");
@@ -84,10 +84,5 @@ public class Main {
         System.out.println("Total Magazines: " + magazines.size());
     }
 
-    public static void AgregarLibros() {
-        books.add(new Books("Cien años de soledad", 1967-05-10, "Editorial Sudamericana", 1010));
-    }
-    public static void MostarLibros(){
-        System.out.println(books);
-    }
+
 }
