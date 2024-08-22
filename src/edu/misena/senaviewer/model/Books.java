@@ -39,9 +39,16 @@ public class Books {
     public String getEditorial() {
         return editorial;
     }
-
     public void setEditorial(String editorial) {
         this.editorial = editorial;
     }
+    public void setISBN(int ISBN) {
+        this.ISBN = ISBN;
+    }
+    public int ISBN() {
+        return ISBN;
+    }
+
+
 
 }

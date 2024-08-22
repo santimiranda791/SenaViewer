@@ -4,11 +4,18 @@ import edu.misena.senaviewer.model.Movies;
 import edu.misena.senaviewer.model.Series;
 import edu.misena.senaviewer.model.Magazines;
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Main {
+    private static List<Movies> movies = new ArrayList<>();
+    private static List<Series> series = new ArrayList<>();
+    private static List<Books> books = new ArrayList<>();
+    private static List<Magazines> magazines = new ArrayList<>();
 
     public static void main(String[]args){
         Scanner scanner = new Scanner(System.in);
+
 
         Books libro1 = new Books("Cien años de soledad", 1967-05-10, "Editorial Sudamericana", 1010);
         Books libro2 = new Books("El gran Gatsby", 1925 / 04 / 10, "Charles Scribner's Sons", 1092);
@@ -30,12 +37,12 @@ public class Main {
 
             System.out.println(menu);
 
-            System.out.println("Elige tu Menu: ");
+            System.out.println("Elige tu Opcion: ");
             opcion = scanner.nextInt();
 
             switch (opcion){
                 case 1:
-                    System.out.println("Los Libros Son:");
+                    MostarLibros();
                     break;
                 case 2:
                     System.out.println("Los Capitulos Son:");
@@ -50,7 +57,7 @@ public class Main {
                     System.out.println("Los Magazines Son:");
                     break;
                 case 6:
-                    System.out.println("Reporte:");
+                    generateReport();
                     break;
                 case 7:
                     System.out.println("El reporte del dia:");
@@ -69,7 +76,18 @@ public class Main {
         }while(opcion !=8);
 
     }
+    public static void generateReport() {
+        System.out.println("\n--- Reporte General ---");
+        System.out.println("Total Movies: " + movies.size()); //El .size es para contar los elementos de un array
+        System.out.println("Total Series: " + series.size());
+        System.out.println("Total Books: " + books.size());
+        System.out.println("Total Magazines: " + magazines.size());
+    }
 
-
-
+    public static void AgregarLibros() {
+        books.add(new Books("Cien años de soledad", 1967-05-10, "Editorial Sudamericana", 1010));
+    }
+    public static void MostarLibros(){
+        System.out.println(books);
+    }
 }
