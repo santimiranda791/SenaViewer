@@ -6,12 +6,12 @@ public class Chapters {
     int id;
     String title;
     int duration;
-    Date year;
+    int year;
     boolean viewed;
     int timeViewed;
     int sessionNumber;
 
-    public Chapters(String title, int duration, Date year) {
+    public Chapters(String title, int duration, int year) {
         this.title = title;
         this.duration = duration;
         this.year = year;
@@ -34,11 +34,11 @@ public class Chapters {
         this.duration = duration;
     }
 
-    public Date year() {
+    public int year() {
         return year();
     }
 
-    public void setYear(Date year) {
+    public void setYear(int year) {
         this.year = year;
     }
 }

@@ -8,7 +8,7 @@ public class Series {
     String genre;
     String creator;
     int duration;
-    Date year;
+    int year;
     boolean viewed;
     int timeViewed;
 

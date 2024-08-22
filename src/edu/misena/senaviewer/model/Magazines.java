@@ -5,17 +5,17 @@ import java.util.Date;
 public class Magazines {
     int id;
     String title;
-    Date editionDate;
+    int editionDate;
     String editorial;
     String authors;
-    public Magazines(String title, Date editionDate, String editorial) {
+    public Magazines(String title, int editionDate, String editorial) {
         this.title = title;
         this.editionDate = editionDate;
         this.editorial = editorial;
 
     }
 
-    // Métodos getter y setter para los atributos (opcional)
+    // Métodos getter y setter para los atributos
     public String getTitle() {
         return title;
     }
@@ -24,11 +24,11 @@ public class Magazines {
         this.title = title;
     }
 
-    public Date getEditionDate() {
+    public int getEditionDate() {
         return editionDate;
     }
 
-    public void setEditionDate(Date editionDate) {
+    public void setEditionDate(int editionDate) {
         this.editionDate = editionDate;
     }
 

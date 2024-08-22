@@ -5,14 +5,14 @@ import java.util.Date;
 public class Books {
     int id;
     String title;
-    Date editionDate;
+    int editionDate;
     String editorial;
     String authors;
     int ISBN;
     boolean readed;
     int timeReaded;
 
-    public Books(String title, Date editionDate, String editorial, int ISBN) {
+    public Books(String title, int editionDate, String editorial, int ISBN) {
         this.title = title;
         this.editionDate = editionDate;
         this.editorial = editorial;
@@ -28,11 +28,11 @@ public class Books {
         this.title = title;
     }
 
-    public Date getEditionDate() {
+    public int getEditionDate() {
         return editionDate;
     }
 
-    public void setEditionDate(Date editionDate) {
+    public void setEditionDate(int editionDate) {
         this.editionDate = editionDate;
     }
 
