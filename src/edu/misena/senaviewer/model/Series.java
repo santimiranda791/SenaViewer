@@ -2,7 +2,7 @@ package edu.misena.senaviewer.model;
 
 import java.util.Date;
 
-public class Series {
+public class Series extends Film {
     int id;
     String title;
     String genre;
@@ -12,13 +12,10 @@ public class Series {
     boolean viewed;
     int timeViewed;
 
-    public Series(String title, String genre, int duration) {
-        this.title = title;
-        this.genre = genre;
-        this.duration = duration;
+    public Series(String title, String genre, String creator, int duration) {
+        super(title, genre, creator, duration);
     }
 
-    // Métodos getter y setter para los atributos
     public String getTitle() {
         return title;
     }
@@ -27,13 +24,22 @@ public class Series {
         this.title = title;
     }
 
-    public String genre() {
-        return genre();
+    public String getGenre() {
+        return genre;
     }
 
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
+    public String getCreator() {
+        return creator;
+    }
+
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
     public int getDuration() {
         return duration;
     }
@@ -41,7 +47,6 @@ public class Series {
     public void setDuration(int duration) {
         this.duration = duration;
     }
-
 
     }
 
