@@ -2,7 +2,7 @@ package edu.misena.senaviewer.model;
 
 import java.util.Date;
 
-public class Books {
+public class Books extends Publication {
     int id;
     String title;
     int editionDate;
@@ -13,10 +13,7 @@ public class Books {
     int timeReaded;
 
     public Books(String title, int editionDate, String editorial, int ISBN) {
-        this.title = title;
-        this.editionDate = editionDate;
-        this.editorial = editorial;
-        this.ISBN = ISBN;
+        super(title, editionDate, editorial);
     }
 
     // Métodos getter y setter para los atributos (opcional)

@@ -47,4 +47,20 @@ public class Movies extends Film {
     public void setDuration(int duration) {
         this.duration = duration;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                super.toString() +
+                ", id=" + id +
+                ", title=" + title +
+                ", genre=" + genre +
+                ", creator=" + creator +
+                ", duration=" + duration +
+                ", year=" + year +
+                ", viewed=" + viewed +
+                ", timeviewed=" + timeviewed +
+                '}';
+    }
 }
+
